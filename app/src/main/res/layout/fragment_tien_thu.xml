@@ -9,7 +9,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="22115053122217"
         android:textSize="20sp"/>
 
 </FrameLayout>

@@ -5,7 +5,7 @@
         android:icon="@drawable/pen"/>
 
     <item android:id="@+id/menu_calendar"
-        android:title="Lịch"
+        android:title="Báo cáo"
         android:icon="@drawable/calendar"/>
 
     <item android:id="@+id/menu_add"
