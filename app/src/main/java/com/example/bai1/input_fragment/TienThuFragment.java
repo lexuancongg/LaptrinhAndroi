@@ -19,14 +19,14 @@ import com.example.bai1.R;
  */
 public class TienThuFragment extends Fragment {
     String[] ten_thu = {
-            "Xe cộ", "Tiền nhà", "Dự phòng", "Tiền ăn",
+            "Thêm", "Tiền nhà", "Dự phòng", "Tiền ăn",
             "Xe cộ", "Tiền nhà", "Dự phòng", "Tiền ăn","Xe cộ", "Tiền nhà", "Dự phòng", "Tiền ăn",
             "Xe cộ", "Tiền nhà", "Dự phòng", "Tiền ăn",
 
     };
     GridView gridView;
     int[] hinh_thu = {
-            R.drawable.car, R.drawable.home, R.drawable.money, R.drawable.restaurant,
+            R.drawable.baseline_add_circle_outline_24, R.drawable.home, R.drawable.money, R.drawable.restaurant,
             R.drawable.car, R.drawable.home, R.drawable.money, R.drawable.restaurant,
             R.drawable.car, R.drawable.home, R.drawable.money, R.drawable.restaurant,
             R.drawable.car, R.drawable.home, R.drawable.money, R.drawable.restaurant,
