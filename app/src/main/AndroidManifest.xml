@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -10,9 +9,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Bai1"
+        android:theme="@style/Theme.BT_NHOM"
         tools:targetApi="31">
         <activity
+            android:name=".activity.LoginActivity"
             android:name=".Fragment1.ActivitySearch"
             android:exported="false" />
         <activity
@@ -43,6 +43,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".activity.MonthlyFluctuationsActivity" android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".activity.DailyFluctuationsActivity" android:exported="true">
+
+        </activity>
+
+
+
     </application>
 
 </manifest>

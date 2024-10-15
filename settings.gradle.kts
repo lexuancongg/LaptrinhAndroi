@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "bai1"
+rootProject.name = "BT_NHOM"
 include(":app")
  
