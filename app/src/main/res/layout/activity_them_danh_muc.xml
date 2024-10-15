@@ -24,7 +24,7 @@
             android:paddingLeft="20dp"
             android:paddingRight="40dp"
             android:background="#03A9F4"
-            android:src="@drawable/previous"
+            android:src="@drawable/ic_left"
             android:contentDescription="Về trước" />
 
     </LinearLayout>
