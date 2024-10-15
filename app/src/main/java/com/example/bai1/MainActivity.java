@@ -31,46 +31,45 @@ public class MainActivity extends AppCompatActivity {
 
     private ViewPager2 viewPager;
     private BottomNavigationView bottomNavigationView;
+    private boolean isManualPageChange = false;
 
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        //set Fragment1
         viewPager = findViewById(R.id.view_pager);
-        bottomNavigationView  = findViewById(R.id.bottom_navigation);
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
         ViewPagerAdapter adapter = new ViewPagerAdapter(this);
         viewPager.setAdapter(adapter);
 
-        //gridView
+        // Kiểm tra Intent để xác định fragment nào cần hiển thị
+        Intent intent = getIntent();
+        if (intent != null && intent.hasExtra("fragmentToShow")) {
+            int fragmentToShow = intent.getIntExtra("fragmentToShow", 0);
+            isManualPageChange = true;
+            viewPager.setCurrentItem(fragmentToShow, false);  // Thay đổi fragment ban đầu
+            bottomNavigationView.getMenu().getItem(fragmentToShow).setChecked(true); // Đảm bảo item được chọn
+        }
 
+        // Đồng bộ ViewPager với BottomNavigationView
+        viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                if (!isManualPageChange) {
+                    bottomNavigationView.getMenu().getItem(position).setChecked(true);
+                }
+                isManualPageChange = false;
+            }
+        });
 
-
-       viewPager.registerOnPageChangeCallback(new OnPageChangeCallback() {
-           @Override
-           public void onPageSelected(int position) {
-               switch (position){
-                   case 0:
-                       bottomNavigationView.getMenu().findItem(R.id.menu_input).setChecked(true);
-                       break;
-                   case 1:
-                       bottomNavigationView.getMenu().findItem(R.id.menu_calendar).setChecked(true);
-                       break;
-                   case 2:
-                       bottomNavigationView.getMenu().findItem(R.id.menu_add).setChecked(true);
-                       break;
-               }
-           }
-       });
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int itemId = item.getItemId();
+                isManualPageChange = true;
                 if (itemId == R.id.menu_input) {
                     viewPager.setCurrentItem(0);
                 } else if (itemId == R.id.menu_calendar) {
@@ -81,10 +80,6 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-
-
-
-
     }
 
 }

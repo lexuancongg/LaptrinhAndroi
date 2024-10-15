@@ -38,11 +38,7 @@ public class DailyFfuctuations extends AppCompatActivity {
         if(thang!=0){
             month.setText("Tháng "+thang);
         }
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
 
         ListView listView = findViewById(R.id.lisviewId);
         biendongsoduArrayAdapter = new BiendongsoduAdapter(DailyFfuctuations.this, biendongsodus);

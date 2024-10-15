@@ -50,7 +50,7 @@ public class BiendongsoduAdapter extends ArrayAdapter<Biendongsodu> {
 
         if (biendongsodu != null) {
             textThang.setText(biendongsodu.getThang()!=0 ? "tháng: " + biendongsodu.getThang(): "ngày "+biendongsodu.getNgay());
-            textMoney.setText(biendongsodu.getMoney() > 0? "+ " + biendongsodu.getMoney() : "- "+biendongsodu.getMoney());
+            textMoney.setText(biendongsodu.getMoney() > 0? "+ " + biendongsodu.getMoney() : " "+biendongsodu.getMoney());
         }
         if(money >0){
             textMoney.setTextColor(Color.GREEN);
