@@ -120,6 +120,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/baocaothaydoisodu"
             android:layout_width="347dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"

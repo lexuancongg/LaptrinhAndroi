@@ -1,8 +1,10 @@
 package com.example.bai1;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
 
 
 import androidx.activity.EdgeToEdge;
@@ -19,6 +21,7 @@ import androidx.viewpager2.widget.ViewPager2;
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback;
 
 import com.example.bai1.Fragment1.ViewPagerAdapter;
+import com.example.bai1.activity.MonthlyFluctuationsActivity;
 import com.example.bai1.input_fragment.TienChiFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -78,6 +81,8 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+
 
 
     }

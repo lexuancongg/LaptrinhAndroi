@@ -13,7 +13,9 @@
 
     import com.example.bai1.ActivityReportList;
     import com.example.bai1.CaiDatKhacActivity;
+    import com.example.bai1.MainActivity;
     import com.example.bai1.R;
+    import com.example.bai1.activity.MonthlyFluctuationsActivity;
 
     /**
      * A simple {@link Fragment} subclass.
@@ -55,7 +57,11 @@
                     startActivity(intent2);
                 }
             });
-
+            LinearLayout baocaothaydoisodu = view.findViewById(R.id.baocaothaydoisodu);
+            baocaothaydoisodu.setOnClickListener(v ->{
+                Intent actions = new Intent(requireContext(), MonthlyFluctuationsActivity.class);
+                startActivity(actions);
+            });
         return view;
         }
     }
