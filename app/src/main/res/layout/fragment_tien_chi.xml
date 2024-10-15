@@ -93,7 +93,8 @@
     </LinearLayout>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shape2">
 
         <GridView
             android:id="@+id/gridView"
@@ -105,8 +106,19 @@
             android:layout_marginEnd="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
-            android:numColumns="3"></GridView>
+            android:numColumns="3"
+            ></GridView>
     </RelativeLayout>
-
+    <Button
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:id="@+id/btn_nhapChi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text="Nhập tiền chi"
+        android:backgroundTint="#E65888"
+        />
 
 </LinearLayout>

@@ -15,15 +15,16 @@
         <activity
             android:name=".Fragment1.ActivitySearch"
             android:exported="false" />
-        <activity
-            android:name=".Report_activity"
-            android:exported="false" />
+
         <activity
             android:name=".ActivityReportList"
             android:exported="false" />
         <activity
-            android:name=".ThemDanhMuc_Tab_Fragment.NGuNGU"
-            android:exported="false" />
+            android:name=".Add_items_ThemDanhMuc"
+            android:exported="false">
+
+        </activity>
+
         <activity
             android:name=".Fragment1.ActivityPremium"
             android:exported="false" />
