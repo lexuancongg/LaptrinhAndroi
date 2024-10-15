@@ -25,11 +25,10 @@ public class Add_items_ThemDanhMuc extends AppCompatActivity {
     };
     GridView gridView;
     int[] hinh = {
-            R.drawable.baseline_add_circle_outline_24, R.drawable.phone, R.drawable.ic_money, R.drawable.food,
-            R.drawable.baseline_add_circle_outline_24, R.drawable.phone, R.drawable.ic_money, R.drawable.food,
-            R.drawable.baseline_add_circle_outline_24, R.drawable.phone, R.drawable.ic_money, R.drawable.food,
-            R.drawable.baseline_add_circle_outline_24, R.drawable.phone, R.drawable.ic_money, R.drawable.food,
-
+            R.drawable.baseline_add_circle_outline_24, R.drawable.ic_money, R.drawable.ic_money, R.drawable.ic_pain,
+            R.drawable.baseline_add_circle_outline_24, R.drawable.ic_money, R.drawable.ic_money, R.drawable.ic_pain,
+            R.drawable.baseline_add_circle_outline_24, R.drawable.ic_money, R.drawable.ic_money, R.drawable.ic_pain,
+            R.drawable.baseline_add_circle_outline_24, R.drawable.ic_money, R.drawable.ic_money, R.drawable.ic_pain,
 
     };
     ImageButton imageButton;
