@@ -1,4 +1,4 @@
-package com.example.bt_nhom;
+package com.example.bt_nhom.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.bt_nhom.R;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -30,13 +32,13 @@ public class LoginActivity extends AppCompatActivity {
         // v : phần tử mà chúng ta thực hien sự kiện => lamda funcition với interface một method
         createAccount.setOnClickListener(v -> {
             // Intent : đối tượng mô tả hành động muốn thực hiện
-            Intent actions = new Intent(LoginActivity.this,RegisterActivity.class);
+            Intent actions = new Intent(LoginActivity.this, RegisterActivity.class);
             // bắt đầu một màn hình mới
             startActivity(actions);
         });
         Button logign = findViewById(R.id.buttonLoggin);
         logign.setOnClickListener(view->{
-            Intent actions = new Intent(LoginActivity.this,MonthlyFluctuationsActivity.class);
+            Intent actions = new Intent(LoginActivity.this, MonthlyFluctuationsActivity.class);
             // bắt đầu một màn hình mới
             startActivity(actions);
         });

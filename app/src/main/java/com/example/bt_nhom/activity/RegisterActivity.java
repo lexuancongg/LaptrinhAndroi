@@ -1,4 +1,4 @@
-package com.example.bt_nhom;
+package com.example.bt_nhom.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.bt_nhom.R;
 
 public class RegisterActivity extends AppCompatActivity {
     @Override
@@ -27,7 +29,7 @@ public class RegisterActivity extends AppCompatActivity {
         haveAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent actions = new Intent(RegisterActivity.this,LoginActivity.class);
+                Intent actions = new Intent(RegisterActivity.this, LoginActivity.class);
                 startActivity(actions);
             }
         });
