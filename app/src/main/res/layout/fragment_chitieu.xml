@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_primary90"
+    tools:context=".chitieu">
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="322dp"
+        android:layout_height="59dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="480dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Ăn uống" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_food"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="120dp"/>
+
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="321dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="422dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Chi tiêu hằng ngày" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_cart"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="180dp"/>
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="322dp"
+        android:layout_height="67dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="353dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Đi lại" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="240dp"
+        android:src="@drawable/ic_car" />
+</RelativeLayout>

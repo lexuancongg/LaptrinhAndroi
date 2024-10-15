@@ -3,9 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".input_fragment.TienChiFragment"
+    android:background="@android:color/background_light"
     android:orientation="vertical"
-    android:background="#D56666">
+    tools:context=".input_fragment.TienChiFragment">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

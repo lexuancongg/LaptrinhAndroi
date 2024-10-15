@@ -24,10 +24,10 @@ public class TienChiFragment extends Fragment {
     };
     GridView gridView;
     int[] hinh = {
-            R.drawable.baseline_add_circle_outline_24, R.drawable.home, R.drawable.money, R.drawable.restaurant,
-            R.drawable.car, R.drawable.home, R.drawable.money, R.drawable.restaurant,
-            R.drawable.car, R.drawable.home, R.drawable.money, R.drawable.restaurant,
-            R.drawable.car, R.drawable.home, R.drawable.money, R.drawable.restaurant,
+            R.drawable.baseline_add_circle_outline_24, R.drawable.food, R.drawable.phone, R.drawable.medicine,
+            R.drawable.oto, R.drawable.ic_cart, R.drawable.cosmetic, R.drawable.playsport,
+            R.drawable.market, R.drawable.education, R.drawable.travel, R.drawable.ic_language,
+            R.drawable.medicine, R.drawable.ic_car, R.drawable.phone, R.drawable.oto,
 
     };
 

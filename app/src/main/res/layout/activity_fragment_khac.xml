@@ -7,20 +7,15 @@
     android:id="@+id/main"
     tools:context="Fragment1.AnotherFragment"
     android:padding="16dp">
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
-        <!-- Tiêu đề -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_gravity="center">
-
             <TextView
                 android:id="@+id/titleText"
                 android:layout_width="wrap_content"
@@ -29,7 +24,6 @@
                 android:textSize="24sp"
                 android:textColor="#000000"
                 android:textStyle="bold"/>
-
             <TextView
                 android:id="@+id/helpText"
                 android:layout_width="wrap_content"
@@ -39,8 +33,6 @@
                 android:layout_marginLeft="250dp"/>
 
         </LinearLayout>
-
-
         <LinearLayout
             android:id="@+id/settingother"
             android:layout_width="347dp"
@@ -82,13 +74,10 @@
             android:orientation="horizontal"
             android:layout_marginLeft="20dp"
             android:padding="16dp">
-
-
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_cloud" />
-
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -97,7 +86,6 @@
                 android:text="Sao lưu và đồng bộ"
                 android:textColor="#FF4444"
                 android:textSize="16sp" />
-
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
@@ -113,12 +101,10 @@
             android:gravity="center_vertical"
             android:orientation="horizontal"
             android:padding="16dp">
-
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_chart" />
-
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -127,8 +113,6 @@
                 android:text="Báo cáo toàn kì"
                 android:textColor="#FF4444"
                 android:textSize="16sp" />
-
-
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
@@ -166,6 +150,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/baocaotrongnam"
             android:layout_width="348dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -196,6 +181,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/timkiemgiaodich"
             android:layout_width="349dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"

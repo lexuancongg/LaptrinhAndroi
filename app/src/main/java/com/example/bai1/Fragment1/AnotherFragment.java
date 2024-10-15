@@ -1,5 +1,6 @@
     package com.example.bai1.Fragment1;
 
+    import android.annotation.SuppressLint;
     import android.content.Intent;
     import android.os.Bundle;
 
@@ -10,6 +11,7 @@
     import android.view.ViewGroup;
     import android.widget.LinearLayout;
 
+    import com.example.bai1.ActivityReportList;
     import com.example.bai1.CaiDatKhacActivity;
     import com.example.bai1.R;
 
@@ -20,6 +22,9 @@
     public class AnotherFragment extends Fragment {
 
         LinearLayout linearLayout;
+        LinearLayout linearLayout1;
+        LinearLayout linearLayout3;
+        @SuppressLint("MissingInflatedId")
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
@@ -33,6 +38,24 @@
                     startActivity(intent);
                 }
             });
+
+            linearLayout1 = (LinearLayout)view.findViewById(R.id.baocaotrongnam);
+            linearLayout1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent1 = new Intent(requireContext(), ActivityReportList.class);
+                    startActivity(intent1);
+                }
+            });
+            linearLayout3 = (LinearLayout)view.findViewById(R.id.timkiemgiaodich);
+            linearLayout3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent2 = new Intent(requireContext(), ActivitySearch.class);
+                    startActivity(intent2);
+                }
+            });
+
         return view;
         }
     }
