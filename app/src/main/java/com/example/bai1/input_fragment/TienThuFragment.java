@@ -1,6 +1,7 @@
 package com.example.bai1.input_fragment;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,10 +9,12 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 import com.example.bai1.Fragment1.GridViewAdapter;
 import com.example.bai1.R;
+import com.example.bai1.ThemDanhMuc;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -44,6 +47,16 @@ public class TienThuFragment extends Fragment {
         GridViewAdapter adapter = new GridViewAdapter(requireContext(), ten_thu, hinh_thu);
         gridView.setAdapter(adapter);
 
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                if (ten_thu[position].equals("Thêm")) {
+                    Intent intent = new Intent(requireContext(), ThemDanhMuc.class);
+                    intent.putExtra("tabToOpen", 1); // Truyền giá trị 1 để mở tab thứ 2
+                    startActivity(intent);
+                }
+            }
+        });
         return view;
     }
 }
