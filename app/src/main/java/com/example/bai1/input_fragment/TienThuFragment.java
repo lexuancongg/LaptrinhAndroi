@@ -29,10 +29,10 @@ public class TienThuFragment extends Fragment {
     };
     GridView gridView;
     int[] hinh_thu = {
-            R.drawable.baseline_add_circle_outline_24, R.drawable.home, R.drawable.money, R.drawable.restaurant,
-            R.drawable.car, R.drawable.home, R.drawable.money, R.drawable.restaurant,
-            R.drawable.car, R.drawable.home, R.drawable.money, R.drawable.restaurant,
-            R.drawable.car, R.drawable.home, R.drawable.money, R.drawable.restaurant,
+            R.drawable.baseline_add_circle_outline_24, R.drawable.medicine, R.drawable.market, R.drawable.food,
+            R.drawable.oto, R.drawable.food, R.drawable.phone  , R.drawable.medicine,
+            R.drawable.oto, R.drawable.travel, R.drawable.playsport, R.drawable.medicine,
+            R.drawable.oto, R.drawable.food, R.drawable.education, R.drawable.medicine,
 
     };
 

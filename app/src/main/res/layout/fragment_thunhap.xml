@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_primary90"
+    tools:context=".thunhap"> <!-- Đảm bảo sử dụng đúng class fragment là thunhap -->
+
+    <EditText
+        android:id="@+id/tl"
+        android:layout_width="318dp"
+        android:layout_height="62dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="494dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Tiền lương" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_wallet"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="105dp"/>
+
+    <EditText
+        android:id="@+id/tamthoi"
+        android:layout_width="318dp"
+        android:layout_height="68dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="427dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Thu nhập tạm thời" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_cart"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="170dp"/>
+
+    <EditText
+        android:id="@+id/phu"
+        android:layout_width="319dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="355dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Thu nhập phụ" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_cart"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="235dp"/>
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="317dp"
+        android:layout_height="72dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="287dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Đầu tư" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_cart"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="305dp"/>
+</RelativeLayout>
