@@ -43,66 +43,72 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:padding="16dp"> <!-- Thêm padding để các phần tử không sát nhau quá -->
 
-        <TextView
-            android:layout_width="wrap_content"
+        <!-- Dòng chữ Thu nhập -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="8dp"
-            android:text="Thu nhập"
-            android:textColor="#000000"
-            android:textSize="18sp" /> <!-- Dòng chữ Thu nhập -->
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"> <!-- Thêm margin dưới để không bị dính với phần dưới -->
 
-        <TextView
-            android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:text="Thu nhập"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:text="Chi tiêu"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tổng"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="70dp"
-            android:layout_marginBottom="8dp"
-            android:text="Chi tiêu"
-            android:textColor="#000000"
-            android:textSize="18sp" /> <!-- Dòng chữ Chi tiêu -->
+            android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:text="Tổng"
-            android:textColor="#000000"
-            android:textSize="18sp" /> <!-- Dòng chữ Tổng -->
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:hint="0đ"
+                android:textStyle="bold" />
 
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:hint="0đ"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:hint="0đ"
+                android:textStyle="bold" />
+        </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="16dp"> <!-- Thêm padding để tránh bị sát -->
-
-        <EditText
-            android:layout_width="116dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="6dp"
-            android:layout_marginEnd="16dp"
-            android:hint="0đ"
-            android:textStyle="bold" />
-
-        <EditText
-            android:layout_width="133dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:hint="0đ
-"
-            android:textStyle="bold" />
-
-        <EditText
-            android:layout_width="121dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:hint="0đ"
-            android:textStyle="bold" />
-
-    </LinearLayout>
 
 </LinearLayout>

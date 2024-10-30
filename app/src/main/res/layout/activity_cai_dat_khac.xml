@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="#F7F7F7"
     android:id="@+id/main"
-
     tools:context=".CaiDatKhacActivity"
     android:padding="16dp">
 
@@ -13,11 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <LinearLayout
-            android:layout_width="355dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:orientation="horizontal">
+
             <ImageView
                 android:id="@+id/trove2"
                 android:layout_width="24dp"
@@ -26,7 +27,7 @@
 
             <TextView
                 android:id="@+id/titleText1"
-                android:layout_width="74dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:text="Khác"
@@ -43,13 +44,12 @@
                 android:textColor="#000000"
                 android:textSize="24sp"
                 android:textStyle="bold" />
-
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="347dp"
+            android:id="@+id/themdanhmuc"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/bd_khac"
@@ -78,15 +78,13 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="348dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:background="@drawable/bd_khac"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:layout_marginLeft="20dp"
             android:padding="16dp">
-
 
             <ImageView
                 android:layout_width="24dp"
@@ -109,9 +107,9 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="348dp"
+            android:id="@+id/thaydoitiente"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/bd_khac"
             android:gravity="center_vertical"
@@ -132,7 +130,6 @@
                 android:textColor="#FF4444"
                 android:textSize="16sp" />
 
-
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
@@ -141,9 +138,8 @@
 
         <LinearLayout
             android:id="@+id/profile"
-            android:layout_width="347dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/bd_khac"
             android:gravity="center_vertical"
@@ -171,9 +167,8 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="348dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/bd_khac"
             android:gravity="center_vertical"
@@ -201,9 +196,9 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="349dp"
+            android:id="@+id/dangxuat"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/bd_khac"
             android:gravity="center_vertical"
@@ -231,9 +226,8 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="349dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/bd_khac"
             android:gravity="center_vertical"
@@ -261,5 +255,4 @@
         </LinearLayout>
 
     </LinearLayout>
-
 </ScrollView>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Back arrow icon -->
+        <ImageView
+            android:id="@+id/trovee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Back"
+            android:src="@drawable/baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hoàn thành"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp" />
+
+        <!-- Spacer to push title to center -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Subtitle -->
+    </LinearLayout>
+
+    <!-- Search bar section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#D4A66A"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_trogiup"
+            android:contentDescription="Piggy bank icon"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bd_khac"
+            android:hint="Search"
+            android:padding="8dp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_search"
+            android:contentDescription="Search icon" />
+    </LinearLayout>
+
+    <!-- FAQ Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#E0E0E0"
+        android:padding="8dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:padding="8dp"
+            android:text="Ứng dụng này có mất phí không?"
+            android:textColor="#FF0000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:padding="8dp"
+            android:text="Tôi muốn chia sẻ thông tin với gia đình?"
+            android:textColor="#FF0000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:padding="8dp"
+            android:text="Tôi muốn sắp xếp lại các danh mục?"
+            android:textColor="#FF0000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:padding="8dp"
+            android:text="Tôi muốn biết thông tin ứng dụng?"
+            android:textColor="#FF0000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Contact section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:text="Liên hệ"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+</LinearLayout>

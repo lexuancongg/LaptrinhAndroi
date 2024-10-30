@@ -3,21 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D56666"
+    android:background="#FFFFFF"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".input_fragment.TienChiFragment">
 
     <LinearLayout
-    android:id="@+id/them_layout"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+        android:id="@+id/them_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
+        <!-- Thêm danh mục -->
         <LinearLayout
-            android:layout_width="347dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/shape_background"
@@ -40,19 +40,19 @@
                 android:textSize="16sp" />
 
             <ImageView
-                android:layout_width="24dp"
+                android:layout_width="wrap_content"
                 android:layout_height="24dp"
                 android:src="@drawable/icc_right" />
         </LinearLayout>
 
+        <!-- Tiền lương -->
         <LinearLayout
-            android:layout_width="348dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:background="@drawable/shape_background"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:layout_marginLeft="20dp"
             android:padding="16dp">
 
             <ImageView
@@ -70,15 +70,15 @@
                 android:textSize="16sp" />
 
             <ImageView
-                android:layout_width="24dp"
+                android:layout_width="wrap_content"
                 android:layout_height="24dp"
                 android:src="@drawable/icc_right" />
         </LinearLayout>
 
+        <!-- Tiền thưởng -->
         <LinearLayout
-            android:layout_width="348dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/shape_background"
             android:gravity="center_vertical"
@@ -100,15 +100,15 @@
                 android:textSize="16sp" />
 
             <ImageView
-                android:layout_width="24dp"
+                android:layout_width="wrap_content"
                 android:layout_height="24dp"
                 android:src="@drawable/icc_right" />
         </LinearLayout>
 
+        <!-- Trúng số -->
         <LinearLayout
-            android:layout_width="347dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/shape_background"
             android:gravity="center_vertical"
@@ -130,15 +130,15 @@
                 android:textSize="16sp" />
 
             <ImageView
-                android:layout_width="24dp"
+                android:layout_width="wrap_content"
                 android:layout_height="24dp"
                 android:src="@drawable/icc_right" />
         </LinearLayout>
 
+        <!-- Giáo dục -->
         <LinearLayout
-            android:layout_width="348dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/shape_background"
             android:gravity="center_vertical"
@@ -159,15 +159,15 @@
                 android:textSize="16sp" />
 
             <ImageView
-                android:layout_width="24dp"
+                android:layout_width="wrap_content"
                 android:layout_height="24dp"
                 android:src="@drawable/icc_right" />
         </LinearLayout>
 
+        <!-- Y tế -->
         <LinearLayout
-            android:layout_width="349dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/shape_background"
             android:gravity="center_vertical"
@@ -188,7 +188,7 @@
                 android:textSize="16sp" />
 
             <ImageView
-                android:layout_width="24dp"
+                android:layout_width="wrap_content"
                 android:layout_height="24dp"
                 android:src="@drawable/icc_right" />
         </LinearLayout>

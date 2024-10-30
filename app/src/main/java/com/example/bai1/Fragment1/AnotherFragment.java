@@ -10,6 +10,7 @@
     import android.view.View;
     import android.view.ViewGroup;
     import android.widget.LinearLayout;
+    import android.widget.TextView;
 
     import com.example.bai1.ActivityReportList;
     import com.example.bai1.CaiDatKhacActivity;
@@ -26,6 +27,9 @@
         LinearLayout linearLayout;
         LinearLayout linearLayout1;
         LinearLayout linearLayout3;
+        LinearLayout linearLayout4;
+        TextView textView;
+
         @SuppressLint("MissingInflatedId")
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -61,6 +65,19 @@
             baocaothaydoisodu.setOnClickListener(v ->{
                 Intent actions = new Intent(requireContext(), MonthlyFluctuationsActivity.class);
                 startActivity(actions);
+            });
+            linearLayout4 = (LinearLayout)view.findViewById(R.id.premium);
+            linearLayout4.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent4 = new Intent(requireContext(), ActivityPremium.class);
+                    startActivity(intent4);
+                }
+            });
+            textView = view.findViewById(R.id.helpText);
+            textView.setOnClickListener(v -> {
+                Intent intent4 = new Intent(requireContext(), Activity_trogiup.class);
+                startActivity(intent4);
             });
         return view;
         }

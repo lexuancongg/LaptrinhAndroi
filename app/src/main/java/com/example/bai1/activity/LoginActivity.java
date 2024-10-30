@@ -23,10 +23,8 @@ public class LoginActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_loggin);
 
-        // R : class tự được được tạo bởi androi đại diện cho resorce và chứa id tất cả các tài nguyên đêt tham chiếu cho từng tài nguyên
+
         TextView createAccount = findViewById(R.id.createAccountId);
-        // handle click
-        // v : phần tử mà chúng ta thực hien sự kiện => lamda funcition với interface một method
         createAccount.setOnClickListener(v -> {
             // Intent : đối tượng mô tả hành động muốn thực hiện
             Intent actions = new Intent(LoginActivity.this, RegisterActivity.class);
