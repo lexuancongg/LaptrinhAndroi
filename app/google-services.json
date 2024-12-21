@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "474850648614",
+    "project_id": "laptrinhandroid-a4700",
+    "storage_bucket": "laptrinhandroid-a4700.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474850648614:android:26abd379756cd86d08fce7",
+        "android_client_info": {
+          "package_name": "com.example.bai1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8O2FrKXASAFIy_U7V0BIuFXwl_qosg6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

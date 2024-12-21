@@ -11,6 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.bai1.CaiDatKhacActivity;
+import com.example.bai1.MainActivity;
 import com.example.bai1.R;
 
 public class Activity_tiente extends AppCompatActivity {
@@ -23,7 +24,7 @@ public class Activity_tiente extends AppCompatActivity {
 
         imageView = findViewById(R.id.tv);
         imageView.setOnClickListener(view -> {
-            Intent intent3 = new Intent(Activity_tiente.this, CaiDatKhacActivity.class);
+            Intent intent3 = new Intent(Activity_tiente.this, MainActivity.class);
             startActivity(intent3);
         });
     }

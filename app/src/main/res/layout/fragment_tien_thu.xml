@@ -1,115 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".input_fragment.TienChiFragment"
     android:orientation="vertical"
-    tools:context=".input_fragment.TienThuFragment">
+    android:padding="16dp"
+    android:id="@+id/tienchi_fragment"
+    tools:ignore="InvalidId">
+
+
+    <EditText
+        android:id="@+id/ngay_tienthu"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Ngày"
+        android:background="@drawable/border"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:inputType="text"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/note_tienthu"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Note"
+        android:background="@drawable/border"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:inputType="text"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/tien_tienthu"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Số tiền"
+        android:background="@drawable/border"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/tv_ngay_thu"
+            android:id="@+id/tv_danhmuc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:text="Ngày"
-            android:textSize="20sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tv_ghichu_thu"
-            android:layout_width="56dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:text="Ghi chú"
-            android:textSize="20sp" />
-
-        <EditText
-            android:id="@+id/edt_ghichu_thu"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Nhập ghi chú"
-            android:inputType="text"
-            android:textSize="20sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tv_tien_thu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:text="Tiền"
-            android:textSize="20sp" />
-
-        <EditText
-            android:id="@+id/edt_tien_thu"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Nhập tiền"
-            android:inputType="number"
-            android:textSize="20sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tv_danhmuthu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:paddingRight="10dp"
             android:text="Danh mục"
             android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_add_danhmuc"
+            android:layout_width="50dp"
+            android:layout_marginRight="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_add"
+            android:contentDescription="Thêm danh mục"
+            android:layout_marginEnd="10dp" />
+
     </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="300dp"
         android:background="@drawable/bg_shape2">
 
         <GridView
-            android:padding="10dp"
-            android:id="@+id/gridView_thu"
+            android:id="@+id/gridView_tienthu"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="20dp"
-            android:numColumns="3"/>
+            android:layout_margin="16dp"
+            android:numColumns="3"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:stretchMode="columnWidth" />
     </RelativeLayout>
 
     <Button
-        android:layout_marginTop="10dp"
-        android:id="@+id/btn_nhap_khoang_thu"
+        android:id="@+id/btn_nhapthu"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nhập khoảng thu"
+        android:layout_height="48dp"
         android:layout_gravity="center"
-        android:backgroundTint="#E65888"
-        android:textSize="20sp"/>
-</androidx.appcompat.widget.LinearLayoutCompat>
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="Lưu"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:minWidth="100dp"
+        android:minHeight="40dp" />
+
+
+</LinearLayout>
+</ScrollView>

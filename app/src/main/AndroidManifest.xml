@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:enableOnBackInvokedCallback="true"
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -28,10 +32,12 @@
             android:name=".activity.DailyFfuctuations"
             android:exported="false" />
         <activity
-            android:name=".activity.MonthlyFluctuationsActivity"
+            android:name=".activity.LaiLoActivity"
+            android:exported="false" />
+        <activity android:name=".activity.HistoryActivity"
             android:exported="false" />
         <activity
-            android:name=".Fragment1.ActivitySearch"
+            android:name=".Fragment1.QuanLyDanhMuc"
             android:exported="false" />
         <activity
             android:name=".ActivityReportList"

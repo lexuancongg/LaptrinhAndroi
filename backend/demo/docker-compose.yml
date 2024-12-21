@@ -1,0 +1,38 @@
+version: "3.9"
+services:
+  pgadmin:
+    image: dpage/pgadmin4:2024-10-19-2
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@yas.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    networks:
+      - yas-network
+    ports:
+      - "5050:80"  # Thêm cổng để truy cập pgAdmin qua trình duyệt
+
+  postgres:
+    image: debezium/postgres:16-alpine
+    build:
+      context: ./docker/postgres  # Đảm bảo đường dẫn build đúng
+    hostname: ${POSTGRES_HOST}
+    ports:
+      - "${POSTGRES_PORT}:${POSTGRES_PORT}" # Kiểm tra biến POSTGRES_PORT đã được khai báo trong `.env`
+    volumes:
+      - ./docker/postgres/postgresql.conf.sample:/usr/share/postgresql/postgresql.conf.sample
+      - ./postgres_init.sql:/docker-entrypoint-initdb.d/postgres_init.sql
+      - postgres:/var/lib/postgresql/data
+    command: postgres -c 'max_connections=500'
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}  # Đảm bảo biến này được khai báo trong `.env`
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}  # Đảm bảo biến này được khai báo trong `.env`
+    networks:
+      - yas-network
+
+volumes:
+  pgadmin:
+  postgres:
+
+networks:
+  yas-network:

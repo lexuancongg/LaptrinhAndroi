@@ -4,7 +4,62 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f134904f-a465-498c-88d3-41a4fc60afdb" name="Changes" comment="" />
+    <list default="true" id="f134904f-a465-498c-88d3-41a4fc60afdb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/bai1/BaseFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/bai1/Fragment1/TitleTab.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/bai1/adapter/GridTextAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/bai1/api/ApiService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/bai1/api/RetrofitClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/bai1/utils/GetTokenId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/bg_item_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/bg_item_selected.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/border.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/gradient_button.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/rounded_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/rounded_button.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/grid_item_text_only.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/title_tab.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/xml/network_security_config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bai1/Add_items_ThemDanhMuc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bai1/Add_items_ThemDanhMuc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bai1/Fragment1/AnotherFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bai1/Fragment1/AnotherFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bai1/Fragment1/CalendarFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bai1/Fragment1/CalendarFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bai1/Fragment1/Fragment1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bai1/Fragment1/GridViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bai1/adapter/GridViewAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bai1/Fragment1/ViewPagerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bai1/Fragment1/ViewPagerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bai1/ProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bai1/ProfileActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bai1/ThemDanhMuc_Tab_Fragment/TienChiDanhMucFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bai1/ThemDanhMuc_Tab_Fragment/TienChiDanhMucFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bai1/ThemDanhMuc_Tab_Fragment/TienThuDanhMucFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bai1/ThemDanhMuc_Tab_Fragment/TienThuDanhMucFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bai1/activity/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bai1/activity/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bai1/activity/RegisterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bai1/activity/RegisterActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bai1/input_fragment/TienChiFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bai1/input_fragment/TienChiFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bai1/input_fragment/TienThuFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bai1/input_fragment/TienThuFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/food.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/drawable/food.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/ic_add.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_add.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/ic_left.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_left.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/previous.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/drawable/previous.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_add_items_them_danh_muc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_add_items_them_danh_muc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_fragment_khac.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_fragment_khac.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_loggin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_loggin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_register.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_them_danh_muc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_them_danh_muc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_calendar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_calendar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_tien_chi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_tien_chi.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_tien_thu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_tien_thu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../settings.gradle.kts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,27 +71,39 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MinhHuyy1003&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/lexuancongg/LaptrinhAndroi&quot;,
+    &quot;accountId&quot;: &quot;bcab0867-d2d7-4516-9406-cf6e79390cf2&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2nTRhN3zBayyio61b1g4f3ce9LW" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "android.gradle.sync.needed": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/DEMO/LaptrinhAndroi"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/LaptrinhAndroi&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

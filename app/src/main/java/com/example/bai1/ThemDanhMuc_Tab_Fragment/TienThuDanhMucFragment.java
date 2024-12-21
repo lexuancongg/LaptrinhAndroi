@@ -6,14 +6,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
 import androidx.fragment.app.Fragment;
 
 import com.example.bai1.Add_items_ThemDanhMuc;
-import com.example.bai1.Fragment1.GridViewAdapter;
 import com.example.bai1.R;
 
 /**

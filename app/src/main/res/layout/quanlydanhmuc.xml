@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Fragment1.QuanLyDanhMuc"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:id="@+id/tienchi_fragment"
+        tools:ignore="InvalidId">
+
+        <!-- Tiêu đề quản lý danh mục -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quản lý danh mục"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center"/>
+
+        <!-- LinearLayout chứa form nhập danh mục mới -->
+        <LinearLayout
+            android:id="@+id/layout_add_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/et_new_category"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Nhập tên danh mục mới"
+                android:padding="12dp"
+                android:background="@drawable/border"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_add_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#03A9F4"
+                android:text="Thêm danh mục"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- RelativeLayout chứa GridView -->
+        <RelativeLayout
+            android:id="@+id/blockGirlViewQuanlydanhmuc"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@drawable/bg_shape2">
+
+            <!-- GridView chỉ chứa danh mục tên -->
+            <GridView
+                android:id="@+id/gridViewQldm"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="16dp"
+                android:numColumns="3"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:stretchMode="columnWidth"
+                android:scrollbars="vertical" />
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/et_edit_category"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Sửa tên danh mục"
+            android:padding="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <!-- LinearLayout chứa nút sửa và xóa -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal">
+
+            <!-- Nút xóa -->
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="xóa"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:minWidth="100dp"
+                android:minHeight="40dp"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Nút sửa -->
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="sửa"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:minWidth="100dp"
+                android:minHeight="40dp"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

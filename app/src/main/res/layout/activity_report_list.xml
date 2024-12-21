@@ -1,63 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ActivityReportList">
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager1"
-        android:layout_width="417dp"
-        android:layout_height="643dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
+    <!-- Nút quay lại -->
     <ImageView
         android:id="@+id/trove3"
         android:layout_width="31dp"
         android:layout_height="30dp"
         android:layout_marginTop="28dp"
-        android:layout_marginEnd="364dp"
+        android:layout_marginStart="16dp"
         android:src="@drawable/ic_left"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Tiêu đề -->
     <TextView
+        android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:layout_marginEnd="320dp"
+        android:layout_marginStart="64dp"
         android:text="Khác"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Layout chứa EditText và nút Xem -->
+    <LinearLayout
+        android:id="@+id/ll_input_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- EditText để nhập năm -->
+        <EditText
+            android:id="@+id/et_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập năm"
+            android:inputType="number"
+            android:padding="12dp"
+            android:minHeight="48dp"
+            android:background="@drawable/border"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Nút Xem -->
+        <Button
+            android:id="@+id/btn_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Xem"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:minHeight="48dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+
+    <!-- TabLayout và ViewPager2 sẽ ẩn lúc đầu -->
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout1"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        app:tabIndicatorColor="@color/tabBackgroundSelected"
+    app:tabSelectedTextColor="@color/tabSelectedTextColor"
+    app:tabTextColor="@color/tabUnselectedTextColor"
+    app:tabBackground="@drawable/tab_background_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    app:layout_constraintTop_toBottomOf="@id/ll_input_section"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout1"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Chi tiêu" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Thu nhâp"
-            tools:layout_editor_absoluteX="18dp"
-            tools:layout_editor_absoluteY="43dp" />
-
-
-    </com.google.android.material.tabs.TabLayout>
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

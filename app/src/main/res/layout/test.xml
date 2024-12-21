@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF5E9"
+    android:padding="16dp">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="#FFA500">
+
+        <TextView
+            android:id="@+id/tv_expense"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Tiền chi"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:background="#FF7F50"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/tv_income"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Tiền thu"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Date Picker -->
+
+
+    <!-- Ghi chú và Tiền chi -->
+    <EditText
+        android:id="@+id/et_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ghi chú"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/et_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tiền chi"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:inputType="number"
+        android:layout_marginTop="8dp" />
+
+    <!-- Danh mục -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_marginTop="16dp">
+
+        <!-- Mỗi danh mục -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_food"
+                android:tint="#FFA500" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ăn uống"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Thêm các mục khác tương tự -->
+    </GridLayout>
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập khoản chi"
+        android:background="#FFA500"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

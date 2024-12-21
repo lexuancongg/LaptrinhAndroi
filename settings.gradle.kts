@@ -15,10 +15,11 @@ dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
-        mavenCentral()
+        maven("https://jitpack.io")
+        gradlePluginPortal()
     }
 }
 
-rootProject.name = "bai1"
+rootProject.name = "ktck124.lop124LTDD04.nhom20"
 include(":app")
  

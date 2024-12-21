@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LaiLoActivity"
+    android:orientation="vertical"
+    android:background="#F0F8FF"
+    android:padding="20dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Báo cáo lãi lỗ"
+        android:textColor="#2F4F4F"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp" />
+
+    <!-- EditText để hiển thị ngày -->
+    <EditText
+        android:id="@+id/et_selected_date_lailo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Chọn ngày"
+        android:padding="15dp"
+        android:background="@drawable/border"
+        android:textSize="18sp"
+        android:textColor="#2F4F4F"
+        android:textStyle="bold"
+        android:focusable="false"
+        android:layout_marginTop="20dp" /> <!-- Tạo khoảng cách giữa các phần tử -->
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="20dp" />
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_marginTop="30dp"
+    android:background="#FFFFFF"
+        android:elevation="5dp"> <!-- Tạo độ nổi cho phần này -->
+
+        <!-- Dòng chữ Thu nhập, Chi tiêu, Tổng -->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="15dp"> <!-- Tăng khoảng cách dưới -->
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Thu nhập"
+        android:textColor="#2F4F4F"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center" />  <!-- Căn giữa các chữ -->
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Chi tiêu"
+        android:textColor="#2F4F4F"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center" /> <!-- Căn giữa -->
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Kết quả"
+        android:textColor="#2F4F4F"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center" /> <!-- Căn giữa -->
+    </LinearLayout>
+
+        <!-- Các EditText nhập liệu Thu nhập, Chi tiêu, Tổng -->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/thunhap"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_weight="1"
+        android:layout_marginEnd="10dp"
+        android:hint="0đ"
+        android:textStyle="bold"
+        android:textColor="#2F4F4F"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/chitieu"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_weight="1"
+        android:layout_marginEnd="10dp"
+        android:hint="0đ"
+        android:textStyle="bold"
+        android:textColor="#2F4F4F"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/ketqua"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_weight="1"
+        android:hint="0đ"
+        android:textStyle="bold"
+        android:textColor="#2F4F4F"
+        android:gravity="center" />
+    </LinearLayout>
+        </LinearLayout>
+
+
+</LinearLayout>

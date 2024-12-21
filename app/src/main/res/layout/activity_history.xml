@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".activity.HistoryActivity"
+    android:padding="16dp">
+
+    <!-- Ô input "Từ ngày" -->
+    <TextView
+        android:id="@+id/history_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lịch sử"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+    <EditText
+        android:id="@+id/from_date_input"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Ngày"
+        android:background="@drawable/border"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:inputType="text"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp" />
+    <!-- Ô input "Đến ngày" -->
+    <EditText
+        android:id="@+id/to_date_input"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Đến Ngày"
+        android:background="@drawable/border"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:inputType="text"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/from_money"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Từ số tiền"
+        android:background="@drawable/border"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/to_money"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Đến số tiền"
+        android:background="@drawable/border"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp" />
+    <!-- Nút "Xem" -->
+    <Button
+        android:id="@+id/view_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Xem"
+        android:layout_gravity="center"/>
+
+
+
+    <!-- RecyclerView để hiển thị danh sách lịch sử giao dịch -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/history_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

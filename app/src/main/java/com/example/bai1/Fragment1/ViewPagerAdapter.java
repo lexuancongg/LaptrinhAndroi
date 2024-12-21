@@ -15,13 +15,13 @@ public class ViewPagerAdapter  extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         switch (position){
             case 0:
-                return new Fragment1();
+                return new TitleTab();
             case 1:
                 return new CalendarFragment();
             case 2:
                 return new AnotherFragment();
             default:
-                return new Fragment1();
+                return new TitleTab();
         }
 
     }

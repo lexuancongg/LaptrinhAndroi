@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/tabBackgroundSelected" android:state_selected="true" />  <!-- Màu nền khi tab được chọn -->
+    <item android:drawable="@color/tabBackgroundUnselected" /> <!-- Màu nền khi tab chưa được chọn -->
+</selector>

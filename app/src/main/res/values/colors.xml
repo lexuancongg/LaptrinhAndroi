@@ -4,5 +4,18 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FF0000</color>
     <color name="gray">#808080</color>
+    <!-- Màu nền của TabLayout -->
+    <color name="tabBackgroundSelected">#FF7043</color> <!-- Màu cam nhạt cho tab đã chọn -->
+    <color name="tabBackgroundUnselected">#FF9800</color> <!-- Màu cam đậm cho tab chưa chọn -->
+
+    <!-- Màu của văn bản khi tab được chọn -->
+    <color name="tabSelectedTextColor">#FFFFFF</color> <!-- Màu trắng cho văn bản của tab đã chọn -->
+
+    <!-- Màu của văn bản khi tab không được chọn -->
+    <color name="tabUnselectedTextColor">#FF5722</color> <!-- Màu cam đậm cho văn bản của tab chưa chọn -->
+
+    <!-- Màu viền của các EditText -->
+    <color name="editTextBorderColor">#FF7043</color> <!-- Màu cam nhạt cho viền của các EditText -->
+
 
 </resources>
